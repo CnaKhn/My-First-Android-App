@@ -1,0 +1,47 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_margin="@dimen/standard_margin">
+
+
+    <TextView
+        android:id="@+id/widget_weather_temp"
+        tools:text="30"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:textColor="@color/colorWhite"
+        android:textSize="60sp" />
+
+    <TextView
+        android:id="@+id/widget_weather_temp_sign"
+        tools:text="°C"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="-6dp"
+        android:layout_toEndOf="@id/widget_weather_temp"
+        android:textSize="20sp"
+        android:textColor="@color/colorWhite"/>
+
+    <TextView
+        tools:text="Clear Sky"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/widget_weather_temp"
+        android:textColor="@color/colorWhite"
+        android:textSize="16sp" />
+
+    <!--TextView
+        android:id="@+id/weather_widget_icon"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/widget_weather_temp_sign"
+        android:layout_alignTop="@id/widget_weather_temp"
+        android:layout_alignBottom="@id/weather_widget_details"
+        android:layout_toEndOf="@id/widget_weather_temp"
+        tools:src="@drawable/weather" /-->
+
+</RelativeLayout>

@@ -1,0 +1,35 @@
+<resources>
+    <string name="app_name">My App</string>
+    <string name="title_activity_multi_tab">MultiTab</string>
+    <string name="lorem">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry\'s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</string>
+
+    <string-array name="titles">
+        <item>Hi there,\nI\'m CnaKhn!</item>
+        <item>My Skills</item>
+        <item>My Interests</item>
+        <item>My Mood</item>
+    </string-array>
+
+    <string-array name="contents">
+        <item>In this Slides you\'re going to know about my job\n(A little bit)</item>
+        <item>I really interest in programming and i love the way i\'m in!\nNowadays i\'m in 200 Days of Goal Challenge!\nI\'d Like to say i\'m in fourth day of that!</item>
+        <item>I\'m in love with nature and my PC!!!\nLike to go nature and start coding some day…</item>
+        <item>Everyday i seen my future in my bed and then wake up and work for that, not very hard but i work…\nI know i will Do It!</item>
+    </string-array>
+
+    <string name="intro_slide_1_title">Reading Books</string>
+    <string name="intro_slide_1_content">The easiest way to reading books.</string>
+
+    <string name="intro_slide_2_title">Coding</string>
+    <string name="intro_slide_2_content">Buy or see free tutorials to learn coding in some programming languages.</string>
+
+    <string name="intro_slide_3_title">Free rooms</string>
+    <string name="intro_slide_3_content">Make at least 1 day free in your week to make yourself up.</string>
+
+    <string name="intro_slide_4_title">Be a better Programmer</string>
+    <string name="intro_slide_4_content">By daily learning new things you can be a better programmer every day!</string>
+
+    <string name="map_distance_label">Distance:</string>
+    <string name="map_distance_metric_label">km</string>
+
+</resources>

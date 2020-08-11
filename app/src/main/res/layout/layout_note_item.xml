@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/note_card"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_marginStart="@dimen/standard_margin"
+    android:layout_marginTop="@dimen/standard_margin"
+    android:layout_marginEnd="@dimen/standard_margin"
+    app:cardCornerRadius="@dimen/standard_card_radius"
+    app:cardElevation="@dimen/standard_margin">
+
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@color/colorOrangeTransparent">
+
+        <View
+            android:id="@+id/view_top"
+            android:layout_width="match_parent"
+            android:layout_height="4dp"
+            android:background="@color/colorWhite" />
+
+        <View
+            android:layout_width="4dp"
+            android:layout_height="0dp"
+            android:layout_alignTop="@id/view_top"
+            android:layout_alignBottom="@id/tv_note_title"
+            android:background="@color/colorWhite" />
+
+        <TextView
+            android:id="@+id/tv_note_priority"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@id/tv_note_title"
+            android:layout_alignBottom="@id/tv_note_title"
+            android:layout_alignParentEnd="true"
+            android:layout_marginEnd="@dimen/standard_margin"
+            android:gravity="center_vertical"
+            android:textColor="@color/colorWhite"
+            android:textSize="16sp"
+            tools:text="1" />
+
+        <TextView
+            android:id="@+id/tv_note_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginStart="@dimen/standard_margin"
+            android:layout_marginTop="@dimen/standard_margin"
+            android:layout_marginEnd="@dimen/standard_margin"
+            android:layout_marginBottom="@dimen/standard_margin"
+            android:layout_toStartOf="@id/tv_note_priority"
+            android:ellipsize="end"
+            android:maxLines="1"
+            android:textAppearance="@style/TextAppearance.AppCompat.Large"
+            tools:text="@string/lorem" />
+
+        <TextView
+            android:id="@+id/tv_note_description"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/tv_note_title"
+            android:layout_marginStart="@dimen/standard_margin"
+            android:layout_marginEnd="@dimen/standard_margin"
+            android:layout_marginBottom="@dimen/standard_margin"
+            android:ellipsize="end"
+            android:lines="2"
+            android:maxLines="2"
+            android:textSize="16sp"
+            tools:text="@string/lorem" />
+
+    </RelativeLayout>
+
+</androidx.cardview.widget.CardView>

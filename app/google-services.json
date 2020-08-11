@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "139473492",
+    "firebase_url": "https://faradarscompleti-1593607582870.firebaseio.com",
+    "project_id": "faradarscompleti-1593607582870",
+    "storage_bucket": "faradarscompleti-1593607582870.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:139473492:android:41e1a61adb0438141d73c1",
+        "android_client_info": {
+          "package_name": "com.cnakhn.faradarscompletion"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "139473492-9nuddl8hhjgpo430r31doa1ac23me78t.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.cnakhn.faradarscompletion",
+            "certificate_hash": "39968e3f6c8a1123d3d4435184647b4792a6c954"
+          }
+        },
+        {
+          "client_id": "139473492-931hingk4urgrcrh9mvr1mku3abk9ddo.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBN3znQF_LkpvIqZ0pR7v_m9VSh8je5yhQ"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "139473492-931hingk4urgrcrh9mvr1mku3abk9ddo.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

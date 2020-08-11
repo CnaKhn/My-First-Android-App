@@ -1,0 +1,3 @@
+include ':infinitescrollprovider'
+include ':app'
+rootProject.name = "FaradarsCompletion"

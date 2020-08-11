@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <ImageView
+        android:id="@+id/image_nav_header"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:adjustViewBounds="true"
+        android:src="@drawable/login_background" />
+
+    <TextView
+        android:id="@+id/header_username"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@id/header_avatar"
+        android:layout_toEndOf="@id/header_avatar"
+        android:gravity="center"
+        android:text="Login to your account"
+        android:textColor="@color/colorWhite"
+        android:textSize="16sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/header_email"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@id/header_avatar"
+        android:layout_toEndOf="@id/header_avatar"
+        android:textColor="@color/colorWhite"
+        tools:text="sinakhanbabaie@gmail.com"
+        android:layout_marginTop="@dimen/standard_margin"/>
+
+    <ImageView
+        android:id="@+id/header_avatar"
+        android:layout_width="60dp"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@id/image_nav_header"
+        android:layout_margin="@dimen/standard_margin"
+        android:adjustViewBounds="true"
+        android:src="@drawable/ic_user" />
+
+</RelativeLayout>

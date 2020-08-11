@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_margin="@dimen/standard_margin"
+    app:cardCornerRadius="@dimen/standard_card_radius"
+    app:cardElevation="@dimen/standard_card_radius">
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <com.facebook.drawee.view.SimpleDraweeView
+            android:id="@+id/item_image"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:adjustViewBounds="true"
+            app:placeholderImage="@mipmap/ic_launcher"
+            app:placeholderImageScaleType="fitXY" />
+
+        <TextView
+            android:id="@+id/item_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/item_image"
+            android:layout_margin="@dimen/standard_margin"
+            android:textColor="@color/colorWhite"
+            android:textSize="16sp"
+            tools:text="Tic tac toe" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@id/item_image"
+            android:layout_alignEnd="@id/item_image"
+            android:text="Photo loaded with Fresco"
+            android:layout_margin="6dp"
+            android:textSize="12sp"
+            android:textColor="@color/colorWhite"
+            android:textStyle="italic"/>
+    </RelativeLayout>
+
+</androidx.cardview.widget.CardView>

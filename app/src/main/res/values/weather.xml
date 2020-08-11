@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="wi_day_sunny">&#xf00d;</string>
+    <string name="wi_night_clear">&#xf02e;</string>
+    <string name="wi_thunderstorm">&#xf01e;</string>
+    <string name="wi_cloudy">&#xf013;</string>
+    <string name="wi_fog">&#xf014;</string>
+    <string name="wi_rain">&#xf019;</string>
+    <string name="wi_snow">&#xf01b;</string>
+    <string name="wi_raindrops">&#xf04e;</string>
+
+</resources>

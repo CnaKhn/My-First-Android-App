@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/nav_menu_profile"
+        android:title="Profile" />
+
+    <item
+        android:id="@+id/nav_menu_edit_profile"
+        android:title="Edit Profile" />
+
+    <item
+        android:id="@+id/nav_menu_intro_slider"
+        android:title="Intro Slider" />
+
+    <item
+        android:id="@+id/nav_menu_fragments"
+        android:title="Fragment" />
+
+    <item
+        android:id="@+id/nav_menu_recycler_view"
+        android:title="Recycler View" />
+
+    <item
+        android:id="@+id/nav_menu_multi_tab"
+        android:title="Multi Tab" />
+
+    <item
+        android:id="@+id/nav_menu_reveal_card"
+        android:title="Reveal Card" />
+
+
+</menu>
