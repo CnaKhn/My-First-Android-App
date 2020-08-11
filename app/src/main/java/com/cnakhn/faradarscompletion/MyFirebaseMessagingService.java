@@ -3,7 +3,6 @@ package com.cnakhn.faradarscompletion;
 import android.app.NotificationChannel;
 import android.app.NotificationManager;
 import android.app.PendingIntent;
-import android.app.TaskInfo;
 import android.content.Context;
 import android.content.Intent;
 import android.graphics.BitmapFactory;
@@ -19,10 +18,8 @@ import androidx.work.Worker;
 import android.util.Log;
 
 import com.cnakhn.faradarscompletion.Activities.MainActivity;
-import com.cnakhn.faradarscompletion.Activities.RecyclerViewActivity;
+import com.cnakhn.faradarscompletion.Activities.ProductsActivity;
 import com.cnakhn.faradarscompletion.DataModel.Product.FakeDataGenerator;
-import com.cnakhn.faradarscompletion.DataModel.Product.ProductDBHelper;
-import com.cnakhn.faradarscompletion.R;
 import com.google.firebase.messaging.FirebaseMessagingService;
 import com.google.firebase.messaging.RemoteMessage;
 
@@ -63,7 +60,7 @@ public class MyFirebaseMessagingService extends FirebaseMessagingService {
                             break;
                         case ACTIVITY_RECYCLER_VIEW:
                             FakeDataGenerator fakeDataGenerator = new FakeDataGenerator();
-                            Intent launchRecyclerViewActivity = new Intent(this, RecyclerViewActivity.class);
+                            Intent launchRecyclerViewActivity = new Intent(this, ProductsActivity.class);
                             launchRecyclerViewActivity.putExtra(fakeDataGenerator.getName(), data.get(EXTRA_POST_NAME));
                             launchRecyclerViewActivity.putExtra(fakeDataGenerator.getCategory(), data.get(EXTRA_POST_CATEGORY));
                             launchRecyclerViewActivity.putExtra(fakeDataGenerator.getInstructions(), data.get(EXTRA_POST_INSTRUCTIONS));

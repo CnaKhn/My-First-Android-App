@@ -7,6 +7,7 @@ import androidx.recyclerview.widget.RecyclerView;
 
 import android.os.Bundle;
 import android.os.Handler;
+import android.view.Menu;
 import android.view.View;
 import android.widget.LinearLayout;
 import android.widget.ProgressBar;
@@ -18,7 +19,7 @@ import com.cnakhn.faradarscompletion.R;
 import java.util.ArrayList;
 import java.util.List;
 
-public class RecyclerViewActivity extends AppCompatActivity {
+public class ProductsActivity extends AppCompatActivity {
     RecyclerView recyclerView;
     List<FakeDataGenerator> productList;
     ProductRecyclerViewAdapter adapter;
@@ -102,4 +103,5 @@ public class RecyclerViewActivity extends AppCompatActivity {
             i++;
         }
     }
+
 }

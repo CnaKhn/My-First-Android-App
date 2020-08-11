@@ -9,6 +9,9 @@
         android:id="@+id/nav_menu_edit_profile"
         android:title="Edit Profile" />
 
+    <item android:id="@+id/nav_menu_contacts"
+        android:title="Contacts"/>
+
     <item
         android:id="@+id/nav_menu_intro_slider"
         android:title="Intro Slider" />
@@ -18,8 +21,8 @@
         android:title="Fragment" />
 
     <item
-        android:id="@+id/nav_menu_recycler_view"
-        android:title="Recycler View" />
+        android:id="@+id/nav_menu_products"
+        android:title="Products" />
 
     <item
         android:id="@+id/nav_menu_multi_tab"

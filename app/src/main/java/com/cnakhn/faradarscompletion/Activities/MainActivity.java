@@ -142,8 +142,12 @@ public class MainActivity extends AppCompatActivity {
                         startActivity(new Intent(MainActivity.this, FragmentsActivity.class));
                         break;
 
-                    case R.id.nav_menu_recycler_view:
-                        startActivity(new Intent(MainActivity.this, RecyclerViewActivity.class));
+                    case R.id.nav_menu_products:
+                        startActivity(new Intent(MainActivity.this, ProductsActivity.class));
+                        break;
+
+                    case R.id.nav_menu_contacts:
+                        startActivity(new Intent(MainActivity.this, ContactsActivity.class));
                         break;
 
                     case R.id.nav_menu_multi_tab:

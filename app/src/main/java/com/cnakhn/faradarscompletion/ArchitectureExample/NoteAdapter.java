@@ -13,9 +13,6 @@ import androidx.recyclerview.widget.RecyclerView;
 
 import com.cnakhn.faradarscompletion.R;
 
-import java.util.ArrayList;
-import java.util.List;
-
 public class NoteAdapter extends ListAdapter<Note, NoteAdapter.NoteHolder> {
 
     public OnItemClickListener listener;

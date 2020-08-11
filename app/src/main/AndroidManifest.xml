@@ -19,9 +19,9 @@
         android:supportsRtl="true"
         android:theme="@style/AppTheme"
         android:usesCleartextTraffic="true">
-        <activity android:name=".RetrofitExample.RetrofitExampleActivity"></activity>
-        <activity android:name=".RXJavaAndroidArchitecture.RxJavaExampleActivity" />
-        <activity android:name=".RxJavaRxAndroid.RxJavaAndroidActivity" />
+        <activity
+            android:name=".Activities.ContactsActivity"
+            android:theme="@style/AppTheme.NoActionBar" />
         <activity android:name=".EventBus.EventBusActivity" />
         <activity android:name=".EventBus.EventBusChildActivity" />
 
@@ -136,7 +136,7 @@
             android:label="@string/title_activity_multi_tab"
             android:theme="@style/AppTheme.NoActionBar" />
         <activity
-            android:name=".Activities.RecyclerViewActivity"
+            android:name=".Activities.ProductsActivity"
             android:label="Recycler View" />
         <activity
             android:name=".Activities.FragmentsActivity"
