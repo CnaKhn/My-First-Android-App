@@ -3,7 +3,9 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
-    android:layout_height="wrap_content">
+    android:layout_height="wrap_content"
+    android:clickable="true"
+    android:foreground="?attr/selectableItemBackground">
 
     <TextView
         android:id="@+id/tv_contact_first_char"
@@ -29,6 +31,7 @@
         android:layout_marginEnd="@dimen/standard_margin"
         android:lines="1"
         android:maxLines="1"
+        android:textSize="16sp"
         android:textColor="@color/colorEnableDot"
         app:layout_constraintBottom_toBottomOf="@+id/tv_contact_first_char"
         app:layout_constraintStart_toEndOf="@+id/tv_contact_first_char"

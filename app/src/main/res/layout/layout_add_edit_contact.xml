@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="250dp"
+    android:layout_height="wrap_content"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_margin="@dimen/standard_margin"
+    android:layout_gravity="center_horizontal"
+    android:elevation="@dimen/standard_margin">
+
+    <TextView
+        android:id="@+id/tv_add_edit_contact"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        tools:text="Create Contact/Edit Contact"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:textSize="18sp"
+        android:textColor="@android:color/darker_gray"/>
+
+    <EditText
+        android:id="@+id/input_add_contact_name"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:hint="Contact name"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:background="@null"
+        android:lines="1"
+        android:maxLines="1"
+        android:layout_marginTop="@dimen/standard_margin"/>
+
+    <Button
+        android:id="@+id/btn_save_add_contact"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Save Contact"
+        android:layout_gravity="center"
+        android:layout_marginTop="4dp"
+        style="@style/Widget.AppCompat.Button.Borderless.Colored"
+        android:textAllCaps="false"
+        android:textSize="16sp"/>
+
+</LinearLayout>

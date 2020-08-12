@@ -20,8 +20,9 @@
         android:theme="@style/AppTheme"
         android:usesCleartextTraffic="true">
         <activity
-            android:name=".Activities.ContactsActivity"
-            android:theme="@style/AppTheme.NoActionBar" />
+            android:name=".Contacts.ContactsActivity"
+            android:theme="@style/AppTheme.NoActionBar"
+            android:label="Contacts"/>
         <activity android:name=".EventBus.EventBusActivity" />
         <activity android:name=".EventBus.EventBusChildActivity" />
 

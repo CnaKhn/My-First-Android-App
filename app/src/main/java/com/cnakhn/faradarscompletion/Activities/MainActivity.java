@@ -30,6 +30,7 @@ import androidx.recyclerview.widget.RecyclerView;
 import androidx.swiperefreshlayout.widget.SwipeRefreshLayout;
 
 import com.cnakhn.faradarscompletion.Activities.JSONParser.JSONParserActivity;
+import com.cnakhn.faradarscompletion.Contacts.ContactsActivity;
 import com.cnakhn.faradarscompletion.EventBus.EventBusActivity;
 import com.cnakhn.faradarscompletion.MainAdapter;
 import com.cnakhn.faradarscompletion.R;
