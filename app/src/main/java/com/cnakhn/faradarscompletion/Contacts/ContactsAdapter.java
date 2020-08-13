@@ -109,7 +109,6 @@ public class ContactsAdapter extends RecyclerView.Adapter<ContactsAdapter.Contac
     private void updateContact(String contactName, int position) {
         contacts.set(position, contactName);
         notifyItemChanged(position);
-        notifyItem
     }
 
     @Override
@@ -145,6 +144,5 @@ public class ContactsAdapter extends RecyclerView.Adapter<ContactsAdapter.Contac
         btnSaveContact.setText("Submit");
         TextView tvAddContact = dialogChangeContactInfo.findViewById(R.id.tv_add_edit_contact);
         tvAddContact.setText("Edit Contact");
-        get
     }
 }
