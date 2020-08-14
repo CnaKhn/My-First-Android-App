@@ -37,7 +37,7 @@
             android:maxLength="20"
             android:maxLines="1"
             android:padding="@dimen/standard_margin"
-            android:textColor="@color/colorOrange"
+            android:textColor="@color/colorGrey"
             android:textColorHint="@color/colorAccent"
             tools:text="saf" />
 

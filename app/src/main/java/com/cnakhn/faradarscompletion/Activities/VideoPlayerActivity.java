@@ -44,7 +44,7 @@ public class VideoPlayerActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_video_player);
-        Utils.setStatusBarColor(this, ContextCompat.getColor(this, R.color.colorOrange));
+        Utils.setStatusBarColor(this, ContextCompat.getColor(this, R.color.colorGrey));
         layoutVideoPlayer = findViewById(R.id.video_player_layout);
         setupLayoutParams();
         setupVideo();

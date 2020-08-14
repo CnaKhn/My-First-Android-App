@@ -65,7 +65,7 @@ public class ExampleAppWidgetConfigActivity extends AppCompatActivity {
         RemoteViews views = new RemoteViews(this.getPackageName(), R.layout.example_widget);
         views.setOnClickPendingIntent(R.id.example_widget_button, buttonPendingIntent);
         views.setCharSequence(R.id.example_widget_button, "setText", buttonText);
-        views.setInt(R.id.example_widget_button, "setTextColor", ContextCompat.getColor(this, R.color.colorOrange));
+        views.setInt(R.id.example_widget_button, "setTextColor", ContextCompat.getColor(this, R.color.colorGrey));
         views.setRemoteAdapter(R.id.example_widget_stack_view, serviceIntent);
         views.setEmptyView(R.id.example_widget_stack_view, R.id.example_widget_empty_view);
         views.setPendingIntentTemplate(R.id.example_widget_stack_view, clickPendingIntent);

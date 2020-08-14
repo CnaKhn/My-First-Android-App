@@ -11,8 +11,8 @@
     <color name="colorDisableDot">#505050</color>
     <color name="colorEnableDot">#FFFFFF</color>
 
-    <color name="colorOrange">#F89406</color>
-    <color name="colorOrangeTransparent">#99F89406</color>
-    <color name="colorOrangeDark">#FFCC7025</color>
-    
+    <color name="colorGrey">#424242</color>
+    <color name="colorGreyDark">#212121</color>
+    <color name="colorGreyTransparent">#99212121</color>
+
 </resources>

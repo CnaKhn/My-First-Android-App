@@ -169,7 +169,7 @@
             android:text="Play Again"
             android:textAllCaps="false"
             android:textColor="@color/colorWhite"
-            app:backgroundTint="@color/colorOrange"
+            app:backgroundTint="@color/colorGrey"
             app:cornerRadius="@dimen/standard_card_radius"
             app:icon="@drawable/ic_refresh"
             app:iconGravity="end" />

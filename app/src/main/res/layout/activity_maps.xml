@@ -10,7 +10,7 @@
         android:id="@+id/tool_bar_maps"
         android:layout_width="match_parent"
         android:layout_height="?attr/actionBarSize"
-        android:background="@color/colorOrange" />
+        android:background="@color/colorGrey" />
 
     <fragment
         android:id="@+id/map"
@@ -24,7 +24,7 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_alignParentBottom="true"
-        android:background="@color/colorOrangeTransparent"
+        android:background="@color/colorGreyTransparent"
         android:gravity="center_horizontal"
         android:padding="@dimen/standard_padding"
         android:textColor="@color/colorBlack"

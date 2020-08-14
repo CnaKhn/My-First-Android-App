@@ -21,6 +21,8 @@
         android:layout_alignParentEnd="true"
         android:layout_alignParentBottom="true"
         app:menu="@menu/menu_example_md_bottom_nav"
-        android:background="@color/colorDisableDot"/>
+        android:background="@color/colorDisableDot"
+        app:elevation="@dimen/standard_margin"
+        app:itemTextColor="@color/colorEnableDot"/>
 
 </RelativeLayout>

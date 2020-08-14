@@ -22,14 +22,14 @@
                 android:layout_height="wrap_content"
                 android:layout_centerHorizontal="true"
                 android:layout_alignParentTop="true"
-                android:background="@color/colorOrange"
+                android:background="@color/colorGrey"
                 android:orientation="vertical">
 
                 <androidx.appcompat.widget.Toolbar
                     android:id="@+id/login_activity_toolbar"
                     android:layout_width="match_parent"
                     android:layout_height="?attr/actionBarSize"
-                    android:background="@color/colorOrange" />
+                    android:background="@color/colorGrey" />
 
                 <androidx.coordinatorlayout.widget.CoordinatorLayout
                     android:id="@+id/layout_login_snackbar"
@@ -73,9 +73,9 @@
                     app:boxBackgroundColor="@color/colorPrimaryDark"
                     app:boxCornerRadiusBottomEnd="@dimen/standard_card_radius"
                     app:boxCornerRadiusTopStart="@dimen/standard_card_radius"
-                    app:boxStrokeColor="@color/colorOrangeDark"
+                    app:boxStrokeColor="@color/colorGreyDark"
                     app:boxStrokeWidth="1dp"
-                    app:hintTextColor="@color/colorOrange">
+                    app:hintTextColor="@color/colorGrey">
 
                     <com.google.android.material.textfield.TextInputEditText
                         android:id="@+id/input_login_username"
@@ -99,9 +99,9 @@
                     app:boxBackgroundColor="@color/colorPrimaryDark"
                     app:boxCornerRadiusBottomEnd="@dimen/standard_card_radius"
                     app:boxCornerRadiusTopStart="@dimen/standard_card_radius"
-                    app:boxStrokeColor="@color/colorOrangeDark"
+                    app:boxStrokeColor="@color/colorGreyDark"
                     app:boxStrokeWidth="1dp"
-                    app:hintTextColor="@color/colorOrange">
+                    app:hintTextColor="@color/colorGrey">
 
                     <com.google.android.material.textfield.TextInputEditText
                         android:id="@+id/input_login_email"
@@ -125,9 +125,9 @@
                     app:boxBackgroundColor="@color/colorPrimaryDark"
                     app:boxCornerRadiusBottomEnd="@dimen/standard_card_radius"
                     app:boxCornerRadiusTopStart="@dimen/standard_card_radius"
-                    app:boxStrokeColor="@color/colorOrangeDark"
+                    app:boxStrokeColor="@color/colorGreyDark"
                     app:boxStrokeWidth="1dp"
-                    app:hintTextColor="@color/colorOrange">
+                    app:hintTextColor="@color/colorGrey">
 
                     <com.google.android.material.textfield.TextInputEditText
                         android:id="@+id/input_login_password"
@@ -151,7 +151,7 @@
                     android:gravity="center"
                     android:text="Log in"
                     android:textAllCaps="false"
-                    android:textColor="@color/colorOrange"
+                    android:textColor="@color/colorGrey"
                     android:textSize="16sp"
                     app:backgroundTint="@color/colorPrimaryDark"
                     app:cornerRadius="@dimen/standard_card_radius" />
@@ -178,7 +178,7 @@
                     android:gravity="center"
                     android:text="Not a member yet?"
                     android:textAllCaps="true"
-                    android:textColor="@color/colorOrangeDark"
+                    android:textColor="@color/colorGreyDark"
                     android:textSize="18sp"
                     android:textStyle="italic" />
 
@@ -189,7 +189,7 @@
                     android:layout_below="@id/txt_no_member"
                     android:layout_centerHorizontal="true"
                     android:layout_margin="@dimen/standard_margin"
-                    android:backgroundTint="@color/colorOrange"
+                    android:backgroundTint="@color/colorGrey"
                     android:gravity="center"
                     android:text="Sign Up"
                     android:textAllCaps="true"

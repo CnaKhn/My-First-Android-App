@@ -126,7 +126,7 @@ public class TicTacToeActivity extends AppCompatActivity implements View.OnClick
     private void prepareWinnerCard() {
         winner = checkWinner();
         if (winner != NO_WINNER || filled()) {
-            Utils.setStatusBarColor(this, ContextCompat.getColor(this, R.color.colorOrangeDark));
+            Utils.setStatusBarColor(this, ContextCompat.getColor(this, R.color.colorGreyDark));
             showValueAnimator();
             String msg = (winner == NO_WINNER) ? "Draw =)" : (winner == PLAYER_X) ? "'X' Winner!" : "'O' Winner!";
             winnerMsg.setText(msg);
@@ -148,7 +148,7 @@ public class TicTacToeActivity extends AppCompatActivity implements View.OnClick
     private void showValueAnimator() {
 
         valueAnimator = ValueAnimator.ofObject(new ArgbEvaluator(),
-                ContextCompat.getColor(this, R.color.colorOrange), ContextCompat.getColor(this, R.color.colorOrangeDark));
+                ContextCompat.getColor(this, R.color.colorGrey), ContextCompat.getColor(this, R.color.colorGreyDark));
         valueAnimator.addUpdateListener(new ValueAnimator.AnimatorUpdateListener() {
             @Override
             public void onAnimationUpdate(ValueAnimator animation) {

@@ -43,7 +43,7 @@ public class MapsActivity extends AppCompatActivity implements OnMapReadyCallbac
     }
 
     private void initViews() {
-        Utils.setStatusBarColor(this, ContextCompat.getColor(this, R.color.colorOrangeDark));
+        Utils.setStatusBarColor(this, ContextCompat.getColor(this, R.color.colorGreyDark));
         Toolbar toolbar = findViewById(R.id.tool_bar_maps);
         setSupportActionBar(toolbar);
         getSupportActionBar().setDisplayHomeAsUpEnabled(true);

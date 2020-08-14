@@ -9,7 +9,7 @@
         android:id="@+id/image_nav_header"
         android:layout_width="match_parent"
         android:layout_height="150dp"
-        android:background="@color/colorOrange"/>
+        android:background="@color/colorGrey"/>
 
     <ImageView
         android:id="@+id/header_avatar"

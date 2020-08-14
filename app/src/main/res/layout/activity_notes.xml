@@ -18,7 +18,7 @@
         android:layout_height="wrap_content"
         android:layout_gravity="end|bottom"
         android:layout_margin="@dimen/standard_margin"
-        app:backgroundTint="@color/colorOrange"
+        app:backgroundTint="@color/colorGrey"
         app:elevation="@dimen/standard_card_radius"
         android:src="@drawable/ic_add"/>
 

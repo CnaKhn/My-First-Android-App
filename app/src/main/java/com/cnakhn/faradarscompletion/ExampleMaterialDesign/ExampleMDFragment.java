@@ -6,8 +6,13 @@ import android.view.LayoutInflater;
 import android.view.MenuItem;
 import android.view.View;
 import android.view.ViewGroup;
+import android.view.animation.AccelerateInterpolator;
 import android.view.animation.AlphaAnimation;
 import android.view.animation.Animation;
+import android.view.animation.AnimationSet;
+import android.view.animation.RotateAnimation;
+import android.view.animation.ScaleAnimation;
+import android.view.animation.TranslateAnimation;
 import android.widget.FrameLayout;
 
 import androidx.annotation.NonNull;
@@ -56,12 +61,32 @@ public class ExampleMDFragment extends Fragment {
 
         MaterialCardView cardView = view.findViewById(R.id.card_products);
 
-        //Animation
-        AlphaAnimation alphaAnimation = new AlphaAnimation(0f, 1f);
-        alphaAnimation.setRepeatCount(Animation.INFINITE);
+        // Animations here...
+        AlphaAnimation alphaAnimation = new AlphaAnimation(1f, 0f);
+        /*alphaAnimation.setRepeatCount(Animation.INFINITE);
         alphaAnimation.setDuration(1500);
-        alphaAnimation.setRepeatMode(Animation.REVERSE);
-        cardView.startAnimation(alphaAnimation);
+        alphaAnimation.setRepeatMode(Animation.REVERSE);*/
+
+        ScaleAnimation scaleAnimation =
+                new ScaleAnimation(1, 0.5F, 1, 0.5F, Animation.RELATIVE_TO_SELF, 0.5F, Animation.RELATIVE_TO_SELF, 0.5F);
+        //scaleAnimation.setRepeatCount(Animation.INFINITE);                settled with Animation Set
+        //scaleAnimation.setDuration(1250);                                 settled with Animation Set
+        //scaleAnimation.setRepeatMode(Animation.REVERSE);                  settled with Animation Set
+        //scaleAnimation.setInterpolator(new AccelerateInterpolator());     settled with Animation Set
+
+        //TranslateAnimation translateAnimation = new TranslateAnimation(0, -200, 0, -500);
+
+        //RotateAnimation rotateAnimation = new RotateAnimation(0, 360, Animation.RELATIVE_TO_SELF, 0.5F, Animation.RELATIVE_TO_SELF, 0.5F);
+
+        // Animation Set
+        AnimationSet animationSet = new AnimationSet(false);
+        animationSet.addAnimation(alphaAnimation);
+        animationSet.addAnimation(scaleAnimation);
+        animationSet.setRepeatCount(Animation.INFINITE);
+        animationSet.setInterpolator(new AccelerateInterpolator());
+        animationSet.setDuration(1250);
+
+        cardView.startAnimation(animationSet);
 
         cardView.setOnClickListener(new View.OnClickListener() {
             @Override

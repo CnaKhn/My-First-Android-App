@@ -15,7 +15,7 @@
     <RelativeLayout
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:background="@color/colorOrangeTransparent">
+        android:background="@color/colorGreyTransparent">
 
         <View
             android:id="@+id/view_top"

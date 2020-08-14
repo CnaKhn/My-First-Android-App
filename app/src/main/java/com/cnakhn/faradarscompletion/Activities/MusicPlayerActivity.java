@@ -37,7 +37,7 @@ public class MusicPlayerActivity extends AppCompatActivity implements ServiceCon
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_music_player);
-        Utils.setStatusBarColor(this, ContextCompat.getColor(this, R.color.colorOrange));
+        Utils.setStatusBarColor(this, ContextCompat.getColor(this, R.color.colorGrey));
         layoutMusicPlayer = findViewById(R.id.music_player_layout);
         bindService(new Intent(this, MusicPlayerService.class), this, BIND_AUTO_CREATE);
     }

@@ -21,7 +21,7 @@ public class ExampleMDActivity extends AppCompatActivity {
         setContentView(R.layout.activity_example_md);
 
         final FragmentTransaction mainTransaction = getSupportFragmentManager().beginTransaction();
-        mainTransaction.replace(R.id.frame_example_mdContainer, new ExampleMDFragment());
+        mainTransaction.add(R.id.frame_example_mdContainer, new ExampleMDFragment());
         mainTransaction.commit();
 
         BottomNavigationView bottomNavigationView = findViewById(R.id.bottom_nav_example_md);
@@ -32,7 +32,10 @@ public class ExampleMDActivity extends AppCompatActivity {
                 switch (item.getItemId()) {
                     case R.id.menu_bottom_nav_home_example_md:
                         transaction.replace(R.id.frame_example_mdContainer, new ExampleMDFragment());
-                        transaction.addToBackStack(null);
+                        /*
+                        * for main fragments in activity that has no fragment behind it better to don't call "addToBackStack"
+                        * cuz it will make the client tap the back button twice and that's kinda bad UX...*/
+                        //transaction.addToBackStack(null);
                         transaction.commit();
                         break;
                     case R.id.menu_bottom_nav_share_example_md:

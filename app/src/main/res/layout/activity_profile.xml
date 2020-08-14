@@ -168,12 +168,12 @@
                 android:gravity="center"
                 android:layout_marginStart="@dimen/standard_margin"
                 android:layout_marginEnd="@dimen/standard_margin"
-                android:backgroundTint="@color/colorOrange"
+                android:backgroundTint="@color/colorGrey"
                 android:text="Save"
                 android:textAlignment="center"
                 android:textAllCaps="false"
                 android:textColor="@color/colorWhite"
-                app:rippleColor="@color/colorOrangeDark" />
+                app:rippleColor="@color/colorGreyDark" />
 
         </LinearLayout>
 

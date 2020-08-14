@@ -32,7 +32,7 @@
             android:id="@+id/music_player_toolbar"
             android:layout_width="match_parent"
             android:layout_height="?attr/actionBarSize"
-            android:background="@color/colorOrange"
+            android:background="@color/colorGrey"
             android:padding="@dimen/standard_padding">
 
             <ImageView

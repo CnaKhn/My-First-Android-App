@@ -16,7 +16,7 @@
             android:id="@+id/video_player_toolbar"
             android:layout_width="match_parent"
             android:layout_height="?attr/actionBarSize"
-            android:background="@color/colorOrange"
+            android:background="@color/colorGrey"
             android:padding="@dimen/standard_padding">
 
             <ImageView
@@ -111,7 +111,7 @@
                     android:layout_height="60dp"
                     android:layout_centerHorizontal="true"
                     android:elevation="@dimen/standard_margin"
-                    app:cardBackgroundColor="@color/colorOrange"
+                    app:cardBackgroundColor="@color/colorGrey"
                     app:cardCornerRadius="200dp">
 
                     <ImageButton

@@ -86,7 +86,7 @@ public class MainActivity extends AppCompatActivity {
         recyclerView = findViewById(R.id.activity_items);
         coordinatorLayout = findViewById(R.id.coordinator_layout);
         refreshLayout = findViewById(R.id.swipe_refresh_layout);
-        refreshLayout.setColorSchemeColors(ContextCompat.getColor(this, R.color.colorOrange), ContextCompat.getColor(MainActivity.this, R.color.colorOrangeDark));
+        refreshLayout.setColorSchemeColors(ContextCompat.getColor(this, R.color.colorGrey), ContextCompat.getColor(MainActivity.this, R.color.colorGreyDark));
         refreshLayout.setOnRefreshListener(new SwipeRefreshLayout.OnRefreshListener() {
             @Override
             public void onRefresh() {
