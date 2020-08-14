@@ -2,20 +2,17 @@
 <com.google.android.material.card.MaterialCardView xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/card_products"
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
     android:layout_marginStart="@dimen/standard_margin"
     android:layout_marginTop="6dp"
     android:layout_marginEnd="@dimen/standard_margin"
     android:layout_marginBottom="6dp"
-    android:checkable="true"
     android:clickable="true"
     android:focusable="true"
     app:cardCornerRadius="@dimen/standard_card_radius"
-    app:cardElevation="@dimen/standard_card_radius"
-    app:rippleColor="@color/colorOrange"
-    app:strokeColor="@color/colorOrange"
-    app:strokeWidth="2dp">
+    app:cardElevation="@dimen/standard_card_radius">
 
     <RelativeLayout
         android:layout_width="match_parent"
@@ -96,7 +93,9 @@
             android:layout_height="wrap_content"
             android:layout_alignParentEnd="true"
             android:adjustViewBounds="true"
-            android:src="@mipmap/ic_menu_white" />
+            app:srcCompat="@drawable/ic_menu"
+            android:padding="@dimen/standard_padding"/>
+
 
     </RelativeLayout>
 
