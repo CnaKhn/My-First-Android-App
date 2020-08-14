@@ -166,7 +166,6 @@ public class MainAdapter extends RecyclerView.Adapter<RecyclerView.ViewHolder> {
             super(itemView);
             itemImage = itemView.findViewById(R.id.item_image);
             txtTitle = itemView.findViewById(R.id.item_title);
-            txtTitle.setTypeface(typeface);
         }
     }
 
@@ -177,7 +176,6 @@ public class MainAdapter extends RecyclerView.Adapter<RecyclerView.ViewHolder> {
         public ViewHolderBanner(@NonNull View itemView) {
             super(itemView);
             bannerTitle = itemView.findViewById(R.id.banner_title);
-            bannerTitle.setTypeface(typeface);
             bannerSlider = itemView.findViewById(R.id.banner_slider);
 
             bannerSlider.addBanner(new DrawableBanner(R.drawable.map_banner).setScaleType(ImageView.ScaleType.CENTER_CROP));

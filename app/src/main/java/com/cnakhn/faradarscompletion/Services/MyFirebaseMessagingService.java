@@ -1,4 +1,4 @@
-package com.cnakhn.faradarscompletion;
+package com.cnakhn.faradarscompletion.Services;
 
 import android.app.NotificationChannel;
 import android.app.NotificationManager;
@@ -20,6 +20,7 @@ import android.util.Log;
 import com.cnakhn.faradarscompletion.Activities.MainActivity;
 import com.cnakhn.faradarscompletion.Activities.ProductsActivity;
 import com.cnakhn.faradarscompletion.DataModel.Product.FakeDataGenerator;
+import com.cnakhn.faradarscompletion.R;
 import com.google.firebase.messaging.FirebaseMessagingService;
 import com.google.firebase.messaging.RemoteMessage;
 

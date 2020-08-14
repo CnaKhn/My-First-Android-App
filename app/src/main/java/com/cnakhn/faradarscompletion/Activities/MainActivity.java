@@ -31,7 +31,9 @@ import androidx.swiperefreshlayout.widget.SwipeRefreshLayout;
 
 import com.cnakhn.faradarscompletion.Activities.JSONParser.JSONParserActivity;
 import com.cnakhn.faradarscompletion.Contacts.ContactsActivity;
+import com.cnakhn.faradarscompletion.ExampleFragments.ExampleFragmentActivity;
 import com.cnakhn.faradarscompletion.EventBus.EventBusActivity;
+import com.cnakhn.faradarscompletion.ExampleMaterialDesign.ExampleMDActivity;
 import com.cnakhn.faradarscompletion.MainAdapter;
 import com.cnakhn.faradarscompletion.R;
 import com.cnakhn.faradarscompletion.Utils;
@@ -216,14 +218,41 @@ public class MainActivity extends AppCompatActivity {
                 return false;
             }
         });
+        // End of Files SubMenu
 
-        menu.add("Internet Connection (Network)").setOnMenuItemClickListener(new MenuItem.OnMenuItemClickListener() {
+        SubMenu examples = menu.addSubMenu("Examples");
+        examples.add("Event Bus Example").setOnMenuItemClickListener(new MenuItem.OnMenuItemClickListener() {
+            @Override
+            public boolean onMenuItemClick(MenuItem item) {
+                startActivity(new Intent(MainActivity.this, EventBusActivity.class));
+                return false;
+            }
+        });
+
+        examples.add("Dialog Fragment Example").setOnMenuItemClickListener(new MenuItem.OnMenuItemClickListener() {
+            @Override
+            public boolean onMenuItemClick(MenuItem item) {
+                startActivity(new Intent(MainActivity.this, ExampleFragmentActivity.class));
+                return false;
+            }
+        });
+
+        examples.add("Example Internet Connection (Network)").setOnMenuItemClickListener(new MenuItem.OnMenuItemClickListener() {
             @Override
             public boolean onMenuItemClick(MenuItem item) {
                 startActivity(new Intent(MainActivity.this, NetworkActivity.class));
                 return false;
             }
         });
+
+        examples.add("Material Design Example").setOnMenuItemClickListener(new MenuItem.OnMenuItemClickListener() {
+            @Override
+            public boolean onMenuItemClick(MenuItem item) {
+                startActivity(new Intent(MainActivity.this, ExampleMDActivity.class));
+                return false;
+            }
+        });
+        // End of Examples SubMenu
 
         menu.add("Incoming Number Receiver").setOnMenuItemClickListener(new MenuItem.OnMenuItemClickListener() {
             @Override
@@ -237,14 +266,6 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public boolean onMenuItemClick(MenuItem item) {
                 startActivity(new Intent(MainActivity.this, CustomReceiverActivity.class));
-                return false;
-            }
-        });
-
-        menu.add("Event Bus Example").setOnMenuItemClickListener(new MenuItem.OnMenuItemClickListener() {
-            @Override
-            public boolean onMenuItemClick(MenuItem item) {
-                startActivity(new Intent(MainActivity.this, EventBusActivity.class));
                 return false;
             }
         });
